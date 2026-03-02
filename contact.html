@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Woods Aerial Monitoring</title>
+  <meta name="description" content="Schedule a consultation with Woods Aerial Monitoring. Serving Hideaway, Tyler, and surrounding East Texas communities." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a2332'/><text y='22' x='6' font-size='18' fill='%23f5f3ef' font-family='serif'>W</text></svg>" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          Woods Aerial Monitoring
+          <span>East Texas Property Oversight</span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-hero-label">Get in Touch</p>
+      <h1 class="page-hero-heading">
+        Schedule a Consultation
+      </h1>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="fade-up">
+
+          <div class="contact-info-item">
+            <p class="contact-info-label">Email</p>
+            <p class="contact-info-value">info@woodsaerial.com</p>
+          </div>
+
+          <div class="contact-info-item">
+            <p class="contact-info-label">Phone</p>
+            <p class="contact-info-value">(972) 740-7232</p>
+          </div>
+
+          <div class="contact-info-item">
+            <p class="contact-info-label">Response Time</p>
+            <p class="contact-info-value">
+              We respond to all inquiries within one business day.
+              For post-storm urgent assessments, please call directly.
+            </p>
+          </div>
+
+          <div class="contact-area-text">
+            <p class="section-label" style="margin-bottom: 12px;">Service Area</p>
+            <p>
+              We serve residential properties throughout the greater Tyler
+              area and surrounding East Texas communities, including
+              Hideaway, Lindale, Flint, Bullard, Whitehouse, and Longview.
+            </p>
+            <br />
+            <p>
+              If you are uncertain whether your property falls within our
+              service area, please contact us and we will confirm coverage
+              before any further discussion.
+            </p>
+          </div>
+
+          <br />
+          <a href="pricing.html" class="btn">View Pricing Programs</a>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="fade-up">
+
+          <!-- Success message (hidden by default) -->
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+            <p class="form-success-title">Your message has been received.</p>
+            <p class="form-success-text">
+              Thank you for reaching out. We will review your inquiry and
+              respond within one business day. If you have an immediate
+              need related to a post-storm inspection, please call us directly.
+            </p>
+          </div>
+
+          <!-- The form -->
+          <form class="contact-form" id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(000) 000-0000"
+                  autocomplete="tel"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service of Interest</label>
+              <select id="service" name="service">
+                <option value="" disabled selected>Select a service</option>
+                <option value="monthly">Monthly Estate Monitoring</option>
+                <option value="priority">Priority Monitoring</option>
+                <option value="comprehensive">Comprehensive Estate Oversight</option>
+                <option value="storm">Post-Storm Inspection</option>
+                <option value="listing">Pre-Listing Documentation</option>
+                <option value="seasonal">Seasonal Property Review</option>
+                <option value="unsure">Not yet decided</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="property">Property Location</label>
+              <input
+                type="text"
+                id="property"
+                name="property"
+                placeholder="City or community (e.g., Hideaway, Tyler)"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Describe your property and what you are looking for. There is no obligation and no sales process."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-filled">Send Inquiry</button>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <p class="footer-brand">Woods Aerial Monitoring</p>
+          <p class="footer-tagline">Discreet aerial oversight and structured property documentation for residential estates in East Texas.</p>
+        </div>
+        <div>
+          <p class="footer-col-heading">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-heading">Services</p>
+          <ul class="footer-links">
+            <li><a href="services.html">Monthly Monitoring</a></li>
+            <li><a href="services.html">Storm Inspections</a></li>
+            <li><a href="services.html">Pre-Listing Reports</a></li>
+            <li><a href="services.html">Seasonal Reviews</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-heading">Contact</p>
+          <p class="footer-contact-item">info@woodsaerial.com</p>
+          <p class="footer-contact-item">(972) 740-7232</p>
+          <p class="footer-contact-item">Serving Hideaway, Tyler,<br />and East Texas</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">2026 Woods Aerial Monitoring. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
