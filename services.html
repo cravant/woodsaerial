@@ -3,296 +3,328 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | Woods Aerial Monitoring</title>
-  <meta name="description" content="Monthly estate monitoring, post-storm inspections, pre-listing aerial documentation, and seasonal property reviews for East Texas residential estates." />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a2332'/><text y='22' x='6' font-size='18' fill='%23f5f3ef' font-family='serif'>W</text></svg>" />
+  <meta name="description" content="Woods Aerial Monitoring services — monthly property monitoring, post-storm inspections, pre-listing documentation, and seasonal reviews for East Texas homeowners." />
+  <title>Services — Woods Aerial Monitoring</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a2333'/><text y='22' x='4' font-size='20' fill='%23b09a6e'>W</text></svg>" />
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Services page specific enhancements */
+    .service-list li {
+      position: relative;
+      padding-left: 28px;
+    }
+    .service-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 14px;
+      border: 1px solid var(--gold);
+      background: transparent;
+    }
+    .service-list li::after {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+    }
+  </style>
 </head>
 <body>
 
   <!-- NAVIGATION -->
-  <nav class="site-nav" aria-label="Primary navigation">
-    <div class="container">
-      <div class="nav-inner">
-        <a href="index.html" class="nav-logo">
-          Woods Aerial Monitoring
-          <span>East Texas Property Oversight</span>
-        </a>
-        <ul class="nav-links" role="list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+  <nav id="navbar" class="scrolled" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-main">Woods Aerial</span>
+        <span class="nav-logo-sub">Monitoring</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html" class="btn btn-outline-light nav-cta">Request Consultation</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Open mobile menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
+  <div class="nav-mobile" id="mobileNav" role="dialog" aria-label="Mobile menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+
   <!-- PAGE HERO -->
-  <section class="page-hero">
+  <header class="services-hero">
     <div class="container">
-      <p class="page-hero-label">What We Provide</p>
-      <h1 class="page-hero-heading">
-        Structured Aerial Services<br />
-        for Residential Properties
-      </h1>
+      <span class="eyebrow">What We Offer</span>
+      <h1>Aerial Monitoring Services</h1>
+      <p>Each program is designed to provide a specific level of oversight — from ongoing monthly monitoring to focused event-based inspections.</p>
     </div>
-  </section>
+  </header>
 
-  <!-- SERVICES INTRO -->
-  <section style="padding: 80px 0 40px; background: var(--cream); border-bottom: 1px solid var(--rule);">
-    <div class="container fade-up">
-      <div style="max-width: 680px;">
-        <p class="section-subtext" style="font-size: 1.05rem; color: var(--text-mid);">
-          Each service is designed to serve a specific need in the lifecycle
-          of property ownership. Whether you are establishing a monitoring
-          baseline, responding to storm damage, or preparing a property for
-          market, our documentation provides a clear, professional record
-          you can rely on.
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <!-- SERVICES LIST -->
-  <section class="services-list">
+  <!-- ══════════════════════════════
+       SERVICE 1 — MONTHLY MONITORING
+  ══════════════════════════════ -->
+  <section class="service-detail" id="monthly" aria-labelledby="service1-heading">
     <div class="container">
+      <div class="service-detail-grid">
 
-      <!-- Service 01 -->
-      <div class="service-block fade-up">
-        <div class="service-block-meta">
-          <div class="service-block-number">01</div>
-          <h2 class="service-block-title">Monthly Estate Monitoring</h2>
-        </div>
-        <div class="service-block-content">
-          <p class="service-block-desc">
-            Our flagship monitoring program provides monthly scheduled aerial
-            surveys of your property. Each visit produces a structured
-            photographic record and written condition assessment, building a
-            longitudinal archive of your estate's condition over time.
-          </p>
-          <p class="service-block-desc">
-            Monitoring is conducted on a fixed monthly schedule. Reports are
-            delivered within five business days of each flight. All imagery
-            and documentation are archived in your client record and
-            accessible upon request.
-          </p>
+        <div class="service-detail-text fade-in">
+          <span class="eyebrow">Ongoing Program</span>
+          <h2 id="service1-heading">Monthly Property Monitoring</h2>
+          <p>Consistent, scheduled aerial oversight of your property throughout the year. Monthly monitoring is our most comprehensive program and is particularly valuable for second homes, vacant estates, and properties in areas prone to seasonal weather events.</p>
+          <p>Each monthly visit follows a structured flight path covering all primary structures, rooflines, drainage areas, driveways, and exterior features. A documented report with annotated imagery is delivered to you within 48 hours of each visit.</p>
 
-          <div class="service-includes">
-            <p class="service-includes-heading">What Is Included</p>
-            <ul class="service-includes-list">
-              <li>Full-perimeter aerial photography of your property</li>
-              <li>Roof condition assessment with annotated imagery</li>
-              <li>Drainage and grading observation notes</li>
-              <li>Outbuilding and structure exterior review</li>
-              <li>Written monthly condition report</li>
-              <li>Archived imagery accessible at any time</li>
-              <li>Year-end property summary document</li>
-            </ul>
-          </div>
+          <ul class="service-list" aria-label="What you receive">
+            <li>One scheduled aerial visit per month</li>
+            <li>High-resolution imagery of all primary structures</li>
+            <li>Roofline and perimeter documentation</li>
+            <li>Drainage and grading observation notes</li>
+            <li>Comparison view from prior visits when available</li>
+            <li>Annotated PDF report delivered by email</li>
+            <li>Secure image archive with 12-month retention</li>
+            <li>Priority scheduling following severe weather events</li>
+          </ul>
 
-          <div class="service-why">
-            <p class="service-why-heading">Why It Matters</p>
-            <p class="service-why-text">
-              Most property deterioration is gradual. Aerial documentation
-              captures conditions that are not visible from the ground and
-              creates a record that supports insurance claims, contractor
-              estimates, and future sale or refinancing. The archive you
-              build over time becomes a meaningful asset.
-            </p>
+          <div style="margin-top:32px; display:flex; gap:16px; flex-wrap:wrap;">
+            <a href="pricing.html" class="btn btn-primary">View Pricing</a>
+            <a href="contact.html" class="btn btn-outline">Request Enrollment</a>
           </div>
         </div>
+
+        <div class="fade-in fade-in-delay-1">
+          <!-- PLACEHOLDER: Replace with monthly monitoring aerial photo -->
+          <div class="img-placeholder img-service-ph">
+            <div class="img-placeholder-inner">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 38L16 24L22 31L30 20L42 38H6Z" stroke="#7a7166" stroke-width="1.5" fill="none"/>
+                <circle cx="14" cy="16" r="4" stroke="#7a7166" stroke-width="1.5"/>
+              </svg>
+              <p>Replace with aerial property overview photo<br/>Monthly monitoring example imagery</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-
-      <!-- Service 02 -->
-      <div class="service-block fade-up">
-        <div class="service-block-meta">
-          <div class="service-block-number">02</div>
-          <h2 class="service-block-title">Post-Storm Inspection Reports</h2>
-        </div>
-        <div class="service-block-content">
-          <p class="service-block-desc">
-            Following significant weather events, including hail, high winds,
-            or heavy rainfall, we conduct a priority aerial inspection of your
-            property and deliver a detailed report documenting observed damage.
-          </p>
-          <p class="service-block-desc">
-            Post-storm reports are prepared with insurance documentation in
-            mind. Imagery is time-stamped and geo-referenced. Written findings
-            describe observable conditions accurately and without speculation.
-          </p>
-
-          <div class="service-includes">
-            <p class="service-includes-heading">What Is Included</p>
-            <ul class="service-includes-list">
-              <li>Priority inspection within 48 hours of qualifying storm event</li>
-              <li>Full aerial photography of all affected structures</li>
-              <li>Annotated damage identification with location references</li>
-              <li>Comparison imagery against prior baseline (for enrolled clients)</li>
-              <li>Formal written inspection report</li>
-              <li>Documentation formatted for insurance submission</li>
-              <li>Follow-up consultation by phone or email</li>
-            </ul>
-          </div>
-
-          <div class="service-why">
-            <p class="service-why-heading">Why It Matters</p>
-            <p class="service-why-text">
-              Insurance adjusters work from the evidence available. Having
-              your own professional aerial documentation, captured immediately
-              after a storm and prepared independently, provides important
-              support for your claim and ensures that no damage goes unrecorded.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service 03 -->
-      <div class="service-block fade-up">
-        <div class="service-block-meta">
-          <div class="service-block-number">03</div>
-          <h2 class="service-block-title">Pre-Listing Aerial Documentation</h2>
-        </div>
-        <div class="service-block-content">
-          <p class="service-block-desc">
-            Before a property is listed for sale or assessed for refinancing,
-            a professional aerial documentation package provides buyers, agents,
-            and lenders with an accurate visual record of the property's
-            exterior condition.
-          </p>
-          <p class="service-block-desc">
-            This service is conducted as a single engagement and does not require
-            ongoing enrollment. The resulting package includes professional aerial
-            photography and a written exterior condition report.
-          </p>
-
-          <div class="service-includes">
-            <p class="service-includes-heading">What Is Included</p>
-            <ul class="service-includes-list">
-              <li>Comprehensive aerial photography of the full property</li>
-              <li>Roof, exterior, and grounds condition documentation</li>
-              <li>High-resolution imagery formatted for listing use</li>
-              <li>Written condition overview and observable findings</li>
-              <li>Boundary and site overview photography</li>
-              <li>Final package delivered within five business days</li>
-            </ul>
-          </div>
-
-          <div class="service-why">
-            <p class="service-why-heading">Why It Matters</p>
-            <p class="service-why-text">
-              Buyers and agents review aerial imagery carefully. A professional
-              documentation package prepared on your behalf, rather than by the
-              buyer's inspector, ensures that your property is represented
-              accurately and that you have an independent record of condition
-              at time of listing.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service 04 -->
-      <div class="service-block fade-up">
-        <div class="service-block-meta">
-          <div class="service-block-number">04</div>
-          <h2 class="service-block-title">Seasonal Property Reviews</h2>
-        </div>
-        <div class="service-block-content">
-          <p class="service-block-desc">
-            Conducted four times per year and aligned to seasonal conditions,
-            these reviews provide a structured aerial assessment of your property
-            as it transitions through the calendar. Each season presents distinct
-            risk conditions for East Texas properties.
-          </p>
-          <p class="service-block-desc">
-            Seasonal reviews are available as a standalone enrollment for
-            homeowners who prefer quarterly rather than monthly coverage, or
-            as a supplement to an existing monitoring program.
-          </p>
-
-          <div class="service-includes">
-            <p class="service-includes-heading">What Is Included</p>
-            <ul class="service-includes-list">
-              <li>Four scheduled aerial surveys per year (quarterly)</li>
-              <li>Season-specific condition checklist and aerial review</li>
-              <li>Roof and drainage condition assessment each quarter</li>
-              <li>Grounds and tree canopy proximity observation</li>
-              <li>Written seasonal condition report</li>
-              <li>Annual summary with year-over-year comparison imagery</li>
-            </ul>
-          </div>
-
-          <div class="service-why">
-            <p class="service-why-heading">Why It Matters</p>
-            <p class="service-why-text">
-              East Texas summers stress roofing materials. Winter storms
-              introduce ice and debris. Spring brings pine pollen accumulation
-              and increased rainfall. Fall is the right time to assess tree
-              canopy proximity and prepare for winter conditions. Seasonal
-              reviews keep property risk awareness consistent throughout the year.
-            </p>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
+
+
+  <!-- ══════════════════════════════
+       SERVICE 2 — POST-STORM
+  ══════════════════════════════ -->
+  <section class="service-detail" id="storm" aria-labelledby="service2-heading">
+    <div class="container">
+      <div class="service-detail-grid">
+
+        <div class="service-detail-text fade-in">
+          <span class="eyebrow">Event-Based</span>
+          <h2 id="service2-heading">Post-Storm Inspection Reports</h2>
+          <p>Following severe weather events — hail, high winds, heavy rain, or ice storms — a prompt aerial inspection provides the documentation you need to assess property damage, initiate insurance claims, or make informed decisions about repairs.</p>
+          <p>Post-storm inspections are conducted within 48 to 72 hours of a weather event and focus specifically on areas most vulnerable to storm-related damage. The resulting report is structured to support insurance documentation requirements.</p>
+
+          <ul class="service-list" aria-label="What you receive">
+            <li>Inspection conducted within 48–72 hours of storm event</li>
+            <li>Focused coverage of roofline and all roof surfaces</li>
+            <li>Documentation of gutters, fascia, and exterior structures</li>
+            <li>Damage identification and annotation on all imagery</li>
+            <li>Comparison against prior visit imagery (if enrolled)</li>
+            <li>Insurance-ready annotated PDF report</li>
+            <li>Available as standalone service or enrolled program</li>
+            <li>Rapid response prioritization for enrolled clients</li>
+          </ul>
+
+          <div style="margin-top:32px; display:flex; gap:16px; flex-wrap:wrap;">
+            <a href="pricing.html" class="btn btn-primary">View Pricing</a>
+            <a href="contact.html" class="btn btn-outline">Request Inspection</a>
+          </div>
+        </div>
+
+        <div class="fade-in fade-in-delay-1">
+          <!-- PLACEHOLDER: Replace with post-storm roof inspection photo -->
+          <div class="img-placeholder img-service-ph">
+            <div class="img-placeholder-inner">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 38L16 24L22 31L30 20L42 38H6Z" stroke="#7a7166" stroke-width="1.5" fill="none"/>
+                <circle cx="14" cy="16" r="4" stroke="#7a7166" stroke-width="1.5"/>
+              </svg>
+              <p>Replace with roof inspection photo<br/>Post-storm damage documentation example</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       SERVICE 3 — PRE-LISTING
+  ══════════════════════════════ -->
+  <section class="service-detail" id="listing" aria-labelledby="service3-heading">
+    <div class="container">
+      <div class="service-detail-grid">
+
+        <div class="service-detail-text fade-in">
+          <span class="eyebrow">Real Estate</span>
+          <h2 id="service3-heading">Pre-Listing Property Documentation</h2>
+          <p>When preparing to sell, comprehensive aerial documentation gives prospective buyers an authoritative view of your estate that ground-level photography simply cannot provide. Aerial imagery is among the most impactful marketing assets available to residential sellers.</p>
+          <p>Our pre-listing documentation package provides a complete set of high-resolution aerial images from multiple altitudes and angles — suitable for use in MLS listings, brokerage materials, and printed marketing collateral.</p>
+
+          <ul class="service-list" aria-label="What you receive">
+            <li>Full exterior and estate aerial photography session</li>
+            <li>Multiple altitude perspectives of all structures</li>
+            <li>Neighborhood context and proximity aerial imagery</li>
+            <li>Pool, outbuildings, and landscape documentation</li>
+            <li>Lot boundary and acreage perspective imagery</li>
+            <li>High-resolution files delivered for print and digital use</li>
+            <li>MLS-ready image package included</li>
+            <li>Optional: 360° aerial tour imagery available on request</li>
+          </ul>
+
+          <div style="margin-top:32px; display:flex; gap:16px; flex-wrap:wrap;">
+            <a href="pricing.html" class="btn btn-primary">View Pricing</a>
+            <a href="contact.html" class="btn btn-outline">Request Documentation</a>
+          </div>
+        </div>
+
+        <div class="fade-in fade-in-delay-1">
+          <!-- PLACEHOLDER: Replace with pre-listing aerial property photo -->
+          <div class="img-placeholder img-service-ph">
+            <div class="img-placeholder-inner">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 38L16 24L22 31L30 20L42 38H6Z" stroke="#7a7166" stroke-width="1.5" fill="none"/>
+                <circle cx="14" cy="16" r="4" stroke="#7a7166" stroke-width="1.5"/>
+              </svg>
+              <p>Replace with neighborhood aerial shot<br/>Pre-listing documentation example</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       SERVICE 4 — SEASONAL REVIEWS
+  ══════════════════════════════ -->
+  <section class="service-detail" id="seasonal" aria-labelledby="service4-heading">
+    <div class="container">
+      <div class="service-detail-grid">
+
+        <div class="service-detail-text fade-in">
+          <span class="eyebrow">Periodic</span>
+          <h2 id="service4-heading">Seasonal Property Reviews</h2>
+          <p>For homeowners who prefer less frequent monitoring, seasonal reviews provide structured aerial documentation on a quarterly or semi-annual basis. Each review captures how your property transitions across seasons — documenting changes that may indicate developing concerns before they require significant attention.</p>
+          <p>Seasonal reviews are an excellent entry point for owners who have not previously engaged professional property monitoring. They provide a clear baseline record and a structured schedule of future visits.</p>
+
+          <ul class="service-list" aria-label="What you receive">
+            <li>Two to four scheduled visits per year</li>
+            <li>Full-property aerial documentation each visit</li>
+            <li>Seasonal change and condition comparison imagery</li>
+            <li>Drainage, runoff, and grading observation notes</li>
+            <li>Tree canopy and landscaping change documentation</li>
+            <li>Annotated PDF report with each visit</li>
+            <li>Secure image archive maintained across visits</li>
+            <li>Option to upgrade to monthly program at any time</li>
+          </ul>
+
+          <div style="margin-top:32px; display:flex; gap:16px; flex-wrap:wrap;">
+            <a href="pricing.html" class="btn btn-primary">View Pricing</a>
+            <a href="contact.html" class="btn btn-outline">Request Enrollment</a>
+          </div>
+        </div>
+
+        <div class="fade-in fade-in-delay-1">
+          <!-- PLACEHOLDER: Replace with seasonal aerial landscape photo -->
+          <div class="img-placeholder img-service-ph">
+            <div class="img-placeholder-inner">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 38L16 24L22 31L30 20L42 38H6Z" stroke="#7a7166" stroke-width="1.5" fill="none"/>
+                <circle cx="14" cy="16" r="4" stroke="#7a7166" stroke-width="1.5"/>
+              </svg>
+              <p>Replace with seasonal property aerial photo<br/>Fall or winter aerial documentation example</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 
   <!-- CTA -->
-  <section class="home-cta">
-    <div class="container fade-up">
-      <p class="section-label" style="text-align:center;">Enrollment</p>
-      <h2 class="section-heading">Ready to Begin a Consultation?</h2>
-      <p class="section-subtext">
-        Contact us to discuss your property and identify the appropriate
-        service program. There is no commitment required to speak with us.
-      </p>
-      <a href="contact.html" class="btn btn-light">Schedule a Consultation</a>
+  <section class="cta-banner">
+    <div class="container">
+      <span class="eyebrow">Begin</span>
+      <h2>Discuss Your Property's Monitoring Needs</h2>
+      <p>We are glad to speak with you about which service best fits your property, schedule, and objectives. There is no obligation — only a straightforward conversation.</p>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn-primary">Request Consultation</a>
+        <a href="pricing.html" class="btn btn-outline">View Pricing Plans</a>
+      </div>
     </div>
   </section>
 
+
   <!-- FOOTER -->
-  <footer class="site-footer">
+  <footer role="contentinfo">
     <div class="container">
-      <div class="footer-top">
-        <div>
-          <p class="footer-brand">Woods Aerial Monitoring</p>
-          <p class="footer-tagline">Discreet aerial oversight and structured property documentation for residential estates in East Texas.</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="nav-logo-main">Woods Aerial</span>
+            <span class="nav-logo-sub">Monitoring</span>
+          </div>
+          <p>Structured aerial oversight for residential properties across East Texas. Discreet, documented, and delivered with care.</p>
         </div>
-        <div>
-          <p class="footer-col-heading">Navigation</p>
-          <ul class="footer-links">
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul role="list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div>
-          <p class="footer-col-heading">Services</p>
-          <ul class="footer-links">
-            <li><a href="services.html">Monthly Monitoring</a></li>
-            <li><a href="services.html">Storm Inspections</a></li>
-            <li><a href="services.html">Pre-Listing Reports</a></li>
-            <li><a href="services.html">Seasonal Reviews</a></li>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul role="list">
+            <li><a href="services.html#monthly">Monthly Monitoring</a></li>
+            <li><a href="services.html#storm">Post-Storm Inspection</a></li>
+            <li><a href="services.html#listing">Pre-Listing Documentation</a></li>
+            <li><a href="services.html#seasonal">Seasonal Reviews</a></li>
           </ul>
         </div>
-        <div>
-          <p class="footer-col-heading">Contact</p>
-          <p class="footer-contact-item">info@woodsaerial.com</p>
-          <p class="footer-contact-item">(972) 740-7232</p>
-          <p class="footer-contact-item">Serving Hideaway, Tyler,<br />and East Texas</p>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul role="list">
+            <li><a href="tel:+19035550000">(903) 555-0000</a></li>
+            <li><a href="mailto:info@woodsaerial.com">info@woodsaerial.com</a></li>
+            <li><a href="contact.html">Request Consultation</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copy">2026 Woods Aerial Monitoring. All rights reserved.</p>
+        <p>&copy; 2025 Woods Aerial Monitoring. All rights reserved.</p>
+        <p>East Texas — Hideaway &middot; Tyler &middot; Surrounding Communities</p>
       </div>
     </div>
   </footer>
