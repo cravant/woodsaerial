@@ -3,243 +3,249 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Woods Aerial Monitoring</title>
-  <meta name="description" content="FAA Part 107 certified aerial monitoring for East Texas residential estates. Professional, discreet, and fully documented property oversight." />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a2332'/><text y='22' x='6' font-size='18' fill='%23f5f3ef' font-family='serif'>W</text></svg>" />
+  <meta name="description" content="Learn about Woods Aerial Monitoring — our commitment to professional aerial property documentation and monitoring for East Texas homeowners." />
+  <title>About — Woods Aerial Monitoring</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a2333'/><text y='22' x='4' font-size='20' fill='%23b09a6e'>W</text></svg>" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="site-nav" aria-label="Primary navigation">
-    <div class="container">
-      <div class="nav-inner">
-        <a href="index.html" class="nav-logo">
-          Woods Aerial Monitoring
-          <span>East Texas Property Oversight</span>
-        </a>
-        <ul class="nav-links" role="list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+  <!-- ══════════════════════════════
+       NAVIGATION
+  ══════════════════════════════ -->
+  <nav id="navbar" class="scrolled" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Woods Aerial Monitoring home">
+        <span class="nav-logo-main">Woods Aerial</span>
+        <span class="nav-logo-sub">Monitoring</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html" class="btn btn-outline-light nav-cta">Request Consultation</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Open mobile menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
+  <div class="nav-mobile" id="mobileNav" role="dialog" aria-label="Mobile menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+
+  <!-- ══════════════════════════════
+       PAGE HERO
+  ══════════════════════════════ -->
+  <header class="about-hero">
     <div class="container">
-      <p class="page-hero-label">About the Company</p>
-      <h1 class="page-hero-heading">
-        Built on Professionalism,<br />
-        Guided by Discretion
-      </h1>
+      <span class="eyebrow">Our Company</span>
+      <h1>About Woods Aerial Monitoring</h1>
+      <p>A professional aerial monitoring service built on discretion, documentation, and a deep familiarity with East Texas residential properties.</p>
     </div>
-  </section>
+  </header>
 
-  <!-- ABOUT INTRO -->
-  <section class="about-intro">
+
+  <!-- ══════════════════════════════
+       AERIAL IMAGE PLACEHOLDER
+  ══════════════════════════════ -->
+  <div class="img-placeholder img-about-ph" aria-label="About page aerial image placeholder">
+    <div class="img-placeholder-inner">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 38L16 24L22 31L30 20L42 38H6Z" stroke="#7a7166" stroke-width="1.5" fill="none"/>
+        <circle cx="14" cy="16" r="4" stroke="#7a7166" stroke-width="1.5"/>
+      </svg>
+      <p>Replace with aerial landscape / company photo<br/>Recommended: 1440×960px</p>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════
+       ABOUT CONTENT
+  ══════════════════════════════ -->
+  <section class="about-content" aria-labelledby="about-heading">
     <div class="container">
-      <div class="about-intro-grid">
-<!-- added stuff for image also in css
-  <div class="fade-up">
-    <p class="section-label">Our Foundation</p>
-    <div class="rule"></div>
-    <h2 class="section-heading" style="font-size: 2rem;">A Local Company with<br />a Specific Purpose</h2>
-  </div>
+      <div class="about-grid">
 
-  <div class="about-image fade-up">
-    <img src="images/droneairbgnd.jpg" alt="Shot of drone before estate survey" />
-  </div>
- to here -->
-        <div class="fade-up">
-          <p class="section-label">Our Foundation</p>
-          <div class="rule"></div>
-          <h2 class="section-heading" style="font-size: 2rem;">A Local Company with<br />a Specific Purpose</h2>
+        <!-- Text Column -->
+        <div class="about-text fade-in">
+          <span class="eyebrow">Who We Are</span>
+          <h2 id="about-heading">Professional Aerial Oversight for the Properties You Value Most</h2>
+          <div class="divider" style="margin:20px 0;"></div>
+
+          <p>Woods Aerial Monitoring was founded to serve a specific need: East Texas homeowners who take pride in the upkeep of their properties and who understand that proactive monitoring is simply good stewardship. Whether you own an estate near Lake Hideaway, a primary residence in Tyler, or a second home in the piney woods of Smith County, your property represents a significant investment — one that deserves regular, professional attention.</p>
+
+          <p>Our operations are built around a straightforward principle: thorough aerial documentation, delivered consistently, with no disruption to your household. We operate quietly, professionally, and with complete respect for the privacy of your home and your neighbors.</p>
+
+          <p>Using commercial-grade drone equipment operated by licensed and insured pilots, we capture high-resolution aerial imagery of your property on your selected schedule. Every visit is organized, documented, and stored — giving you a clear, running record of your property's condition across time.</p>
+
+          <p>We are not a technology company or a photography service. We are a property monitoring service that employs aerial technology to do the work more thoroughly and more efficiently than any ground-based inspection could accomplish. Our reports are organized, legible, and delivered in a format that is immediately useful — whether you share them with your insurance carrier, your contractor, or simply keep them on file.</p>
         </div>
 
-        <div class="about-body fade-up">
-          <p>
-            Woods Aerial Monitoring was founded to address a gap in property
-            management services in East Texas. Large residential estates require
-            consistent, structured oversight. Yet most inspection services are
-            reactive, arriving only after a problem has already developed into
-            a costly concern.
-          </p>
-          <p>
-            We established a practice built around proactive documentation.
-            Using FAA-certified drone operations, we provide homeowners with
-            a regular aerial record of their property's condition, maintained
-            over time and available when it is needed most.
-          </p>
-          <p>
-            Our focus is narrow by design. We serve residential estates in
-            East Texas, and we take that responsibility seriously. Every flight
-            is conducted by a certified operator. Every report is prepared with
-            care. Every client relationship is conducted with the same
-            professional discretion you would expect from any high-quality
-            property services firm.
-          </p>
+        <!-- Values Column -->
+        <div class="fade-in fade-in-delay-1">
+          <span class="eyebrow">Our Commitments</span>
+          <h3 style="margin-bottom:8px;">The Standards We Hold Ourselves To</h3>
+          <div class="divider" style="margin:16px 0 32px;"></div>
 
-          <div class="about-credentials">
+          <div class="about-values">
 
-            <div class="credential-item">
-              <span class="credential-title">Aerial Documentation and Reporting</span>
-              <span class="credential-detail">Structured Process</span>
+            <div class="about-value">
+              <span class="av-num" aria-hidden="true">01</span>
+              <div class="av-text">
+                <h4>Operational Discretion</h4>
+                <p>We conduct every flight with care for your privacy and the privacy of adjacent properties. Our pilots follow established corridors and maintain professional conduct throughout every visit.</p>
+              </div>
             </div>
 
-            <div class="credential-item">
-              <span class="credential-title">Privacy-Compliant Operations</span>
-              <span class="credential-detail">All Applicable Regulations</span>
+            <div class="about-value">
+              <span class="av-num" aria-hidden="true">02</span>
+              <div class="av-text">
+                <h4>Comprehensive Documentation</h4>
+                <p>We do not take shortcuts. Each visit includes systematic coverage of all primary structures, rooflines, drainage areas, and perimeter features according to a documented checklist.</p>
+              </div>
+            </div>
+
+            <div class="about-value">
+              <span class="av-num" aria-hidden="true">03</span>
+              <div class="av-text">
+                <h4>Licensed &amp; Insured Operations</h4>
+                <p>All operations are conducted by FAA Part 107 certified pilots carrying full commercial liability insurance. We carry the credentials your property and your neighborhood deserve.</p>
+              </div>
+            </div>
+
+            <div class="about-value">
+              <span class="av-num" aria-hidden="true">04</span>
+              <div class="av-text">
+                <h4>Local Knowledge</h4>
+                <p>We know East Texas. We understand the seasonal weather patterns, the types of properties in the communities we serve, and the concerns that matter most to homeowners in this region.</p>
+              </div>
+            </div>
+
+            <div class="about-value">
+              <span class="av-num" aria-hidden="true">05</span>
+              <div class="av-text">
+                <h4>Responsive Communication</h4>
+                <p>When something is flagged during a visit, you hear from us promptly. We communicate clearly, without alarm, and always with your best interests as a property owner in mind.</p>
+              </div>
             </div>
 
           </div>
-
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- VALUES -->
-  <section class="about-values">
+
+  <!-- ══════════════════════════════
+       SECOND IMAGE BANNER
+  ══════════════════════════════ -->
+  <div class="img-placeholder img-banner-ph fade-in" aria-label="Banner image placeholder">
+    <div class="img-placeholder-inner">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 38L16 24L22 31L30 20L42 38H6Z" stroke="#7a7166" stroke-width="1.5" fill="none"/>
+        <circle cx="14" cy="16" r="4" stroke="#7a7166" stroke-width="1.5"/>
+      </svg>
+      <p>Replace with aerial property banner image<br/>Recommended: 1920×560px</p>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════
+       SERVICE AREA
+  ══════════════════════════════ -->
+  <section class="service-area" aria-labelledby="about-area-heading">
     <div class="container">
-
-      <div class="fade-up">
-        <p class="section-label">Our Commitments</p>
-        <div class="rule"></div>
-        <h2 class="section-heading">How We Operate</h2>
+      <div class="section-header">
+        <span class="eyebrow">Where We Operate</span>
+        <h2 id="about-area-heading">East Texas Coverage</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p>Our service area encompasses the established residential communities and rural estates of East Texas. If you are outside these areas, contact us — we may still be able to accommodate your property.</p>
       </div>
-
-      <div class="values-grid stagger">
-
-        <div class="value-card">
-          <h3 class="value-title">Discretion</h3>
-          <p class="value-text">
-            Aerial monitoring on a residential estate requires a careful,
-            respectful approach. We conduct all flights in accordance with
-            FAA regulations and with full awareness of your privacy and
-            your neighbors'. Our work is conducted professionally and
-            without unnecessary visibility.
-          </p>
-        </div>
-
-        <div class="value-card">
-          <h3 class="value-title">Documentation</h3>
-          <p class="value-text">
-            Every flight produces a structured report. Photography, notes,
-            and condition assessments are organized, timestamped, and
-            archived. Your property record grows each month, providing
-            an increasingly valuable reference for insurance, maintenance,
-            and long-term planning.
-          </p>
-        </div>
-
-        <div class="value-card">
-          <h3 class="value-title">Algorithmic Monitoring</h3>
-          <p class="value-text">
-            Advanced computer driven analysis continuously evaluates 
-            your property to detect structural irregularities, drainage 
-            concerns, surface damage, and other emerging issues. By 
-            identifying patterns and anomalies early, our system 
-            delivers clear, data backed insights that help prevent 
-            constly repairs and long term deterioration.
-          </p>
-        </div>
-
-        <div class="value-card">
-          <h3 class="value-title">Consistency</h3>
-          <p class="value-text">
-            The value of monitoring comes from regularity. We do not
-            treat scheduled visits as optional. Monthly surveys are
-            conducted on a consistent schedule, and post-storm
-            assessments are prioritized within 48 hours of significant
-            weather events.
-          </p>
-        </div>
-
-        <div class="value-card">
-          <h3 class="value-title">Clarity</h3>
-          <p class="value-text">
-            Reports are written to be understood by homeowners, not
-            technicians. We describe what we observe in plain terms,
-            flag areas of concern clearly, and recommend appropriate
-            next steps without overstating or minimizing findings.
-          </p>
-        </div>
-
-        <div class="value-card">
-          <h3 class="value-title">Local Knowledge</h3>
-          <p class="value-text">
-            East Texas weather, terrain, and property conditions are
-            specific. Pine needles, clay soil, and seasonal storm
-            patterns require informed interpretation. Our experience
-            in this region informs every assessment we conduct.
-          </p>
-        </div>
-
+      <div class="area-tags" role="list">
+        <span class="area-tag" role="listitem">Hideaway</span>
+        <span class="area-tag" role="listitem">Tyler</span>
+        <span class="area-tag" role="listitem">Lindale</span>
+        <span class="area-tag" role="listitem">Longview</span>
+        <span class="area-tag" role="listitem">Whitehouse</span>
+        <span class="area-tag" role="listitem">Bullard</span>
+        <span class="area-tag" role="listitem">Flint</span>
+        <span class="area-tag" role="listitem">Lake Palestine</span>
+        <span class="area-tag" role="listitem">Chandler</span>
+        <span class="area-tag" role="listitem">Canton</span>
       </div>
-
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="home-cta">
-    <div class="container fade-up">
-      <p class="section-label" style="text-align:center;">Next Steps</p>
-      <h2 class="section-heading">Speak with Us Directly</h2>
-      <p class="section-subtext">
-        Begin with a conversation. We are happy to discuss your property
-        and answer any questions before you make any decisions.
-      </p>
-      <a href="contact.html" class="btn btn-light">Contact Us</a>
-    </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
+  <!-- ══════════════════════════════
+       CTA
+  ══════════════════════════════ -->
+  <section class="cta-banner">
     <div class="container">
-      <div class="footer-top">
-        <div>
-          <p class="footer-brand">Woods Aerial Monitoring</p>
-          <p class="footer-tagline">Discreet aerial oversight and structured property documentation for residential estates in East Texas.</p>
+      <span class="eyebrow">Begin</span>
+      <h2>Speak With Our Team</h2>
+      <p>We welcome inquiries from homeowners who take the condition of their property seriously. A brief consultation is the best way to determine whether our programs are a fit for your situation.</p>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn-primary">Request Consultation</a>
+        <a href="pricing.html" class="btn btn-outline">Explore Monitoring Plans</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="nav-logo-main">Woods Aerial</span>
+            <span class="nav-logo-sub">Monitoring</span>
+          </div>
+          <p>Structured aerial oversight for residential properties across East Texas. Discreet, documented, and delivered with care.</p>
         </div>
-        <div>
-          <p class="footer-col-heading">Navigation</p>
-          <ul class="footer-links">
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul role="list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div>
-          <p class="footer-col-heading">Services</p>
-          <ul class="footer-links">
-            <li><a href="services.html">Monthly Monitoring</a></li>
-            <li><a href="services.html">Storm Inspections</a></li>
-            <li><a href="services.html">Pre-Listing Reports</a></li>
-            <li><a href="services.html">Seasonal Reviews</a></li>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul role="list">
+            <li><a href="services.html#monthly">Monthly Monitoring</a></li>
+            <li><a href="services.html#storm">Post-Storm Inspection</a></li>
+            <li><a href="services.html#listing">Pre-Listing Documentation</a></li>
+            <li><a href="services.html#seasonal">Seasonal Reviews</a></li>
           </ul>
         </div>
-        <div>
-          <p class="footer-col-heading">Contact</p>
-          <p class="footer-contact-item">info@woodsaerial.com</p>
-          <p class="footer-contact-item">(972) 740-7232</p>
-          <p class="footer-contact-item">Serving Hideaway, Tyler,<br />and East Texas</p>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul role="list">
+            <li><a href="tel:+19035550000">(903) 555-0000</a></li>
+            <li><a href="mailto:info@woodsaerial.com">info@woodsaerial.com</a></li>
+            <li><a href="contact.html">Request Consultation</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copy">2026 Woods Aerial Monitoring. All rights reserved.</p>
+        <p>&copy; 2025 Woods Aerial Monitoring. All rights reserved.</p>
+        <p>East Texas — Hideaway &middot; Tyler &middot; Surrounding Communities</p>
       </div>
     </div>
   </footer>
