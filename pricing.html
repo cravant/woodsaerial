@@ -3,241 +3,242 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing | Woods Aerial Monitoring</title>
-  <meta name="description" content="Transparent monthly pricing for aerial estate monitoring programs in East Texas. Three structured tiers designed for long-term property stewardship." />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a2332'/><text y='22' x='6' font-size='18' fill='%23f5f3ef' font-family='serif'>W</text></svg>" />
+  <meta name="description" content="Woods Aerial Monitoring pricing — Estate Monitoring, Priority Monitoring, and Comprehensive Oversight programs for East Texas homeowners." />
+  <title>Pricing — Woods Aerial Monitoring</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a2333'/><text y='22' x='4' font-size='20' fill='%23b09a6e'>W</text></svg>" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
   <!-- NAVIGATION -->
-  <nav class="site-nav" aria-label="Primary navigation">
-    <div class="container">
-      <div class="nav-inner">
-        <a href="index.html" class="nav-logo">
-          Woods Aerial Monitoring
-          <span>East Texas Property Oversight</span>
-        </a>
-        <ul class="nav-links" role="list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+  <nav id="navbar" class="scrolled" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-main">Woods Aerial</span>
+        <span class="nav-logo-sub">Monitoring</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+        <li><a href="contact.html" class="btn btn-outline-light nav-cta">Request Consultation</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Open mobile menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
+  <div class="nav-mobile" id="mobileNav" role="dialog" aria-label="Mobile menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+
   <!-- PAGE HERO -->
-  <section class="page-hero">
+  <header class="pricing-hero">
     <div class="container">
-      <p class="page-hero-label">Program Pricing</p>
-      <h1 class="page-hero-heading">
-        Transparent, Structured<br />
-        Monthly Programs
-      </h1>
+      <span class="eyebrow">Monitoring Programs</span>
+      <h1>Straightforward Pricing</h1>
+      <p>Our programs are structured to provide the appropriate level of oversight for your property and your circumstances. No long-term contracts are required to begin.</p>
     </div>
-  </section>
+  </header>
 
-  <!-- PRICING INTRO -->
-  <section class="pricing-intro">
-    <div class="container">
-      <div class="fade-up" style="max-width: 640px;">
-        <p class="section-label">How Pricing Works</p>
-        <div class="rule"></div>
-        <p class="section-subtext" style="font-size: 1rem; color: var(--text-mid);">
-          All programs are billed monthly with no long-term contracts required.
-          We do not believe in locking clients into terms they do not want.
-          If your needs change, your program can change with them.
-        </p>
-        <br />
-        <p class="section-subtext" style="font-size: 1rem; color: var(--text-mid);">
-          Pricing reflects a fixed monthly fee for scheduled services.
-          Post-storm inspections are included in Priority and Comprehensive
-          programs. One-time or standalone services are priced separately
-          upon consultation.
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <!-- PRICING GRID -->
-  <section class="pricing-section">
+  <!-- ══════════════════════════════
+       PRICING SECTION
+  ══════════════════════════════ -->
+  <section class="pricing-section" aria-labelledby="pricing-heading">
     <div class="container">
 
-      <div class="pricing-grid stagger">
+      <div class="section-header fade-in">
+        <span class="eyebrow">Three Programs</span>
+        <h2 id="pricing-heading">Select the Level of Oversight That Fits Your Property</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p>Each program includes professional aerial documentation, organized reporting, and secure image archiving. The difference between tiers is the frequency of visits and the scope of coverage included.</p>
+      </div>
 
-        <!-- Tier 1 -->
-        <div class="pricing-card">
-          <p class="pricing-tier">Estate Monitoring</p>
-          <p class="pricing-price">$99</p>
-          <p class="pricing-period">per month</p>
-          <div class="pricing-divider"></div>
-          <ul class="pricing-features">
-            <li>Monthly scheduled aerial survey</li>
-            <li>Full-perimeter property photography</li>
-            <li>Roof condition assessment</li>
-            <li>Written monthly condition report</li>
-            <li>Archived imagery record</li>
-            <li>Annual property summary</li>
-            <li>Email delivery of all reports</li>
+      <div class="pricing-grid" role="list">
+
+        <!-- ── TIER 1: Estate Monitoring ── -->
+        <div class="pricing-card fade-in" role="listitem">
+          <span class="pricing-tier">Entry</span>
+          <h3>Estate Monitoring</h3>
+          <div class="pricing-amount" aria-label="$99 per month">$99</div>
+          <span class="pricing-period">per month, billed monthly</span>
+          <div class="pricing-divider" aria-hidden="true"></div>
+          <p class="pricing-desc">A reliable foundation of aerial oversight for homeowners who want consistent documentation without the frequency of our more comprehensive programs.</p>
+          <ul class="pricing-list" aria-label="Estate Monitoring features">
+            <li>One scheduled aerial visit per month</li>
+            <li>Full exterior property documentation</li>
+            <li>Roofline and perimeter imagery</li>
+            <li>Standard annotated PDF report</li>
+            <li>6-month image archive</li>
+            <li>Email report delivery within 72 hours</li>
+            <li>One post-storm inspection per year included</li>
           </ul>
-          <a href="contact.html" class="btn" style="width: 100%; text-align: center; display: block;">Request Enrollment</a>
+          <a href="contact.html" class="btn btn-outline" style="width:100%; display:block; text-align:center;">Request Enrollment</a>
         </div>
 
-        <!-- Tier 2 (featured) -->
-        <div class="pricing-card featured">
-          <p class="pricing-tier">Priority Monitoring</p>
-          <p class="pricing-price">$149</p>
-          <p class="pricing-period">per month</p>
-          <div class="pricing-divider"></div>
-          <ul class="pricing-features">
-            <li>Everything in Estate Monitoring</li>
-            <li>Post-storm priority inspection included</li>
-            <li>48-hour response following qualifying weather</li>
-            <li>Insurance-formatted storm documentation</li>
-            <li>Drainage and grading observation notes</li>
-            <li>Outbuilding and fence line review</li>
-            <li>Quarterly comparison imagery</li>
+        <!-- ── TIER 2: Priority Monitoring (featured) ── -->
+        <div class="pricing-card featured fade-in fade-in-delay-1" role="listitem">
+          <div class="pricing-badge">Most Selected</div>
+          <span class="pricing-tier">Preferred</span>
+          <h3>Priority Monitoring</h3>
+          <div class="pricing-amount" aria-label="$149 per month">$149</div>
+          <span class="pricing-period">per month, billed monthly</span>
+          <div class="pricing-divider" aria-hidden="true"></div>
+          <p class="pricing-desc">Our most widely selected program. Priority Monitoring provides an elevated level of documentation frequency and client responsiveness — appropriate for primary residences and valued estate properties.</p>
+          <ul class="pricing-list" aria-label="Priority Monitoring features">
+            <li>Two scheduled aerial visits per month</li>
+            <li>Comprehensive property documentation each visit</li>
+            <li>Detailed roofline, drainage, and perimeter coverage</li>
+            <li>Priority annotated PDF report within 48 hours</li>
+            <li>12-month image archive with comparison views</li>
+            <li>Unlimited post-storm priority inspections</li>
+            <li>Direct phone access to your assigned monitor</li>
+            <li>Annual summary report included</li>
           </ul>
-          <a href="contact.html" class="btn btn-light" style="width: 100%; text-align: center; display: block;">Request Enrollment</a>
+          <a href="contact.html" class="btn btn-gold" style="width:100%; display:block; text-align:center;">Request Enrollment</a>
         </div>
 
-        <!-- Tier 3 -->
-        <div class="pricing-card">
-          <p class="pricing-tier">Comprehensive Estate Oversight</p>
-          <p class="pricing-price">$229</p>
-          <p class="pricing-period">per month</p>
-          <div class="pricing-divider"></div>
-          <ul class="pricing-features">
-            <li>Everything in Priority Monitoring</li>
-            <li>Unlimited post-storm inspections</li>
-            <li>Seasonal property review (4x per year)</li>
-            <li>Tree canopy and proximity assessment</li>
-            <li>Grounds and landscape condition notes</li>
-            <li>Phone consultation with each report</li>
-            <li>Full historical archive with search access</li>
+        <!-- ── TIER 3: Comprehensive Oversight ── -->
+        <div class="pricing-card fade-in fade-in-delay-2" role="listitem">
+          <span class="pricing-tier">Premium</span>
+          <h3>Comprehensive Oversight</h3>
+          <div class="pricing-amount" aria-label="$229 per month">$229</div>
+          <span class="pricing-period">per month, billed monthly</span>
+          <div class="pricing-divider" aria-hidden="true"></div>
+          <p class="pricing-desc">The most thorough program we offer. Designed for large estates, absentee property owners, and those who require a complete, ongoing visual record of every aspect of their property.</p>
+          <ul class="pricing-list" aria-label="Comprehensive Oversight features">
+            <li>Weekly scheduled aerial visits</li>
+            <li>Full property, grounds, and landscape documentation</li>
+            <li>Detailed multi-structure coverage and reporting</li>
+            <li>Priority annotated PDF report within 24 hours</li>
+            <li>Unlimited image archive with full history</li>
+            <li>Immediate post-storm inspection response</li>
+            <li>Dedicated point of contact — direct line and email</li>
+            <li>Annual property condition summary report</li>
+            <li>Pre-listing aerial package included at no charge</li>
           </ul>
-          <a href="contact.html" class="btn" style="width: 100%; text-align: center; display: block;">Request Enrollment</a>
+          <a href="contact.html" class="btn btn-outline" style="width:100%; display:block; text-align:center;">Request Enrollment</a>
         </div>
 
       </div>
 
-      <!-- Pricing note -->
-      <div class="pricing-note fade-up">
-        <div class="pricing-note-inner">
-
-          <div>
-            <p class="section-label">A Note on Value</p>
-            <div class="rule"></div>
-            <h3 class="section-heading" style="font-size: 1.6rem;">
-              An Investment in Documented Risk Awareness
-            </h3>
-          </div>
-
-          <div class="pricing-note-text">
-            <p>
-              The purpose of a monitoring program is not to find problems.
-              Most months, there will be nothing unusual to report. The value
-              lies in the record: a documented, time-stamped, professionally
-              prepared archive of your property's condition.
-            </p>
-            <p>
-              When something does happen, whether a storm, a leak, a dispute
-              with a contractor, or a property transaction, that record becomes
-              a meaningful asset. Homeowners enrolled in monitoring programs
-              consistently report that the documentation is worth more than
-              the monitoring itself.
-            </p>
-            <p>
-              We encourage prospective clients to begin with a consultation
-              before selecting a program. There is no obligation, and we are
-              happy to discuss which level of coverage is appropriate for
-              your specific property and circumstances.
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Standalone note -->
-      <div style="padding: 48px; background: var(--off-white); border: 1px solid var(--rule); margin-top: 24px;" class="fade-up">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-          <div>
-            <p class="section-label">One-Time Services</p>
-            <h3 style="font-family: var(--serif); font-size: 1.4rem; color: var(--navy); font-weight: 400; margin-bottom: 12px;">
-              Pre-Listing Documentation
-            </h3>
-            <p style="font-size: 0.88rem; color: var(--text-light); line-height: 1.8;">
-              Available as a standalone engagement for homeowners preparing
-              to list or refinance. Pricing is determined by property size
-              and scope. Contact us to discuss your specific situation.
-            </p>
-          </div>
-          <div>
-            <a href="contact.html" class="btn">Inquire About Standalone Services</a>
-          </div>
-        </div>
+      <!-- Pricing Note -->
+      <div class="pricing-note fade-in">
+        <span class="eyebrow" style="text-align:center; display:block;">A Note on Pricing</span>
+        <p>Our programs are offered on a month-to-month basis. There are no annual contracts required to enroll. If your property's monitoring needs change — due to a sale, renovation, or relocation — adjustments can be made at the close of any billing period. We are glad to discuss which program is appropriate for your situation before you commit to anything.</p>
       </div>
 
     </div>
   </section>
+
+
+  <!-- ══════════════════════════════
+       ONE-TIME SERVICES
+  ══════════════════════════════ -->
+  <section style="background: var(--white); padding: var(--section-pad) 0;" aria-labelledby="onetime-heading">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="eyebrow">À La Carte</span>
+        <h2 id="onetime-heading">One-Time Services</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p>Not every need requires a monthly program. We offer the following services as standalone engagements for homeowners with specific, time-limited requirements.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:2px; background:#ddd9d0; border:1px solid #ddd9d0; margin-top:48px;">
+
+        <div style="background:var(--white); padding:40px 36px;" class="fade-in">
+          <span class="eyebrow">Single Visit</span>
+          <h3 style="margin-bottom:12px;">Post-Storm Inspection</h3>
+          <p style="font-size:0.92rem; margin-bottom:20px;">A focused aerial inspection conducted following a hail, wind, or storm event. Includes annotated imagery and PDF report structured for insurance documentation.</p>
+          <p style="font-family: var(--font-heading); font-size:2rem; color:var(--navy); margin-bottom:24px;">From $195</p>
+          <a href="contact.html" class="btn btn-outline">Request Inspection</a>
+        </div>
+
+        <div style="background:var(--white); padding:40px 36px;" class="fade-in fade-in-delay-1">
+          <span class="eyebrow">Single Visit</span>
+          <h3 style="margin-bottom:12px;">Pre-Listing Documentation</h3>
+          <p style="font-size:0.92rem; margin-bottom:20px;">A comprehensive aerial photography session for properties preparing to go to market. Includes MLS-ready imagery package and full-resolution files for marketing use.</p>
+          <p style="font-family: var(--font-heading); font-size:2rem; color:var(--navy); margin-bottom:24px;">From $275</p>
+          <a href="contact.html" class="btn btn-outline">Request Documentation</a>
+        </div>
+
+        <div style="background:var(--white); padding:40px 36px;" class="fade-in fade-in-delay-2">
+          <span class="eyebrow">Periodic</span>
+          <h3 style="margin-bottom:12px;">Seasonal Property Review</h3>
+          <p style="font-size:0.92rem; margin-bottom:20px;">Quarterly or semi-annual aerial reviews for homeowners who prefer occasional rather than ongoing monitoring. Each visit includes full documentation and a written report.</p>
+          <p style="font-family: var(--font-heading); font-size:2rem; color:var(--navy); margin-bottom:24px;">From $150 / visit</p>
+          <a href="contact.html" class="btn btn-outline">Request Review</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 
   <!-- CTA -->
-  <section class="home-cta">
-    <div class="container fade-up">
-      <p class="section-label" style="text-align:center;">Begin</p>
-      <h2 class="section-heading">Start with a Conversation</h2>
-      <p class="section-subtext">
-        Contact us to schedule a consultation. We will discuss your property,
-        your goals, and what level of monitoring makes sense.
-      </p>
-      <a href="contact.html" class="btn btn-light">Contact Us</a>
+  <section class="cta-banner">
+    <div class="container">
+      <span class="eyebrow">Enroll</span>
+      <h2>Ready to Protect Your Property Investment?</h2>
+      <p>Reach out to begin the enrollment process or to ask any questions you may have about our programs. We are happy to help you identify the right level of monitoring for your property.</p>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn-primary">Request Consultation</a>
+        <a href="services.html" class="btn btn-outline">Review Our Services</a>
+      </div>
     </div>
   </section>
 
+
   <!-- FOOTER -->
-  <footer class="site-footer">
+  <footer role="contentinfo">
     <div class="container">
-      <div class="footer-top">
-        <div>
-          <p class="footer-brand">Woods Aerial Monitoring</p>
-          <p class="footer-tagline">Discreet aerial oversight and structured property documentation for residential estates in East Texas.</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="nav-logo-main">Woods Aerial</span>
+            <span class="nav-logo-sub">Monitoring</span>
+          </div>
+          <p>Structured aerial oversight for residential properties across East Texas. Discreet, documented, and delivered with care.</p>
         </div>
-        <div>
-          <p class="footer-col-heading">Navigation</p>
-          <ul class="footer-links">
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul role="list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div>
-          <p class="footer-col-heading">Services</p>
-          <ul class="footer-links">
-            <li><a href="services.html">Monthly Monitoring</a></li>
-            <li><a href="services.html">Storm Inspections</a></li>
-            <li><a href="services.html">Pre-Listing Reports</a></li>
-            <li><a href="services.html">Seasonal Reviews</a></li>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul role="list">
+            <li><a href="services.html#monthly">Monthly Monitoring</a></li>
+            <li><a href="services.html#storm">Post-Storm Inspection</a></li>
+            <li><a href="services.html#listing">Pre-Listing Documentation</a></li>
+            <li><a href="services.html#seasonal">Seasonal Reviews</a></li>
           </ul>
         </div>
-        <div>
-          <p class="footer-col-heading">Contact</p>
-          <p class="footer-contact-item">info@woodsaerial.com</p>
-          <p class="footer-contact-item">(972) 740-7232</p>
-          <p class="footer-contact-item">Serving Hideaway, Tyler,<br />and East Texas</p>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul role="list">
+            <li><a href="tel:+19035550000">(903) 555-0000</a></li>
+            <li><a href="mailto:info@woodsaerial.com">info@woodsaerial.com</a></li>
+            <li><a href="contact.html">Request Consultation</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copy">2026 Woods Aerial Monitoring. All rights reserved.</p>
+        <p>&copy; 2025 Woods Aerial Monitoring. All rights reserved.</p>
+        <p>East Texas — Hideaway &middot; Tyler &middot; Surrounding Communities</p>
       </div>
     </div>
   </footer>
